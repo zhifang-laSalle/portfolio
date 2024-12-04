@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zhi-fang Li's Design Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+        <style>
+            #btn1:hover{
+                opacity:0.4;
+                background-color:black;
+            }
+            
+            #btn1{
+                transition-property: opacity, background-color;
+                transition-duration: 1s;
+            }
+            
+            @keyframes rotate{
+                from{
+                    transform:rotate(0deg) scale(0);
+                }
+                to {
+                    transform:rotate(180deg) scale(2);
+                }
+            }
+            #headingAnimation{
+                animation-name: rotate;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                display:inline-block;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        
+        <nav class="nav justify-content-center nav-pills">
+            <a class="nav-link active" href="#" aria-current="page">Home</a>
+            <a class="nav-link" href="#">Link 2</a>
+        </nav>        
+        <nav class="navbar bg-dark navbar-expand-md navbar-dark sticky-top">
+            <div class="container">
+            <a class="navbar-brand" href="#">Z's Design</a>
+            
+            <button 
+                    class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbar1"
+                    aria-controls="navbar1"
+                    aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           
+            <div class="collapse navbar-collapse" id="navbar1"> 
+            <div class="navbar-nav" >
+                <a class="nav-link active" href="#" aria-current="page">Home</a>
+                <a class="nav-link" href="#">Link 2</a>
+            </div>
+            </div>
+            
+            </div>
+        </nav>
+        
+        
+        <button type="button" class="btn btn-primary m-5" id="btn1">Hello</button>
+        
+        <h1 id="headingAnimation">Hello!!!</h1>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
+        <div class="container">
+
+            <!--Example of a cropped image using PS-->
+            <div class="row my-5" >
+                <div class="col">
+                    <img class="img-fluid" src="images/pumkin-cropped.png" alt="...">
+                </div>
+            </div>
+
+            <!--Example of a cropped image using code (look at the strange behavior when re-sizing)-->
+            <div class="row" >
+                <div class="col">
+                    <img class="object-fit-cover" src="images/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png" alt="..." width="100%" height="150px;">
+                </div>
+            </div>
+            
+            <!--2 column row with margin and gutters-->
+            <div class="row  my-2 gx-4  ">
+                <div class="col">
+                    <img class="img-fluid" src="images/IMG_7700.JPG" alt="...">
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="images/pexels-karolina-grabowska-4016579.jpg" alt="...">
+                </div>
+            </div>
+            
+            <!--3 column row with 1 image using alignments and margins (and border)-->
+            <div class="row border border-4 align-items-center justify-content-around my-2 mx-0">
+                <div class="col-3 text-center ">button</div>
+                <div class="col-3 ">
+                <img class="img-fluid" src="images/UDbNfPMN3DN6z80UULYq--1--evdu2_4x.jpg.webp" alt="...">
+                </div>
+                <div class="col-3 ">words</div>
+            </div>
+            
+            <!--About Me section with image and text and margins-->
+            <div class="row my-3">
+                <div class="col-4">
+                    <img class="object-fit-cover" src="images/IMG_7700.JPG" alt="..." height="100%" width=100%>
+                </div>
+                <div class="col-8">
+                    <h2>About Me</h2>
+                    <h3>Hi! I'm Ange Lazzaro</h3>
+                    <p>I’m a designer and photographer based in Philly where I am currently a junior at La Salle University.</p>
+                    <p>I love preserving moments and telling stories through my art.</p>
+                    <button>Read More</button>
+                </div>
+            </div> 
+            
+            <!--Last row with 1 column and cropped image-->
+            <div class="row">
+                <div class="col"><img class="img-fluid" src="images/Virrappan2-58f79980ae6fb__880.jpg" alt="..."> </div>
+            </div>
+
+            <!--Now that 1st version of the layout is done, time to add breakpoints-->
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
